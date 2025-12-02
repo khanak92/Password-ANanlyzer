@@ -1,0 +1,86 @@
+/* Custom styles for password strength analyzer */
+
+#strengthBar {
+    width: 0%;
+}
+
+.requirement-icon {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 50%;
+    transition: all 0.3s ease;
+}
+
+.requirement-icon.valid {
+    background-color: #10b981;
+    color: white;
+}
+
+.requirement-icon.invalid {
+    background-color: #ef4444;
+    color: white;
+}
+
+/* Strength bar colors */
+.strength-0 {
+    background-color: #ef4444; /* red */
+}
+
+.strength-1 {
+    background-color: #f97316; /* orange */
+}
+
+.strength-2 {
+    background-color: #eab308; /* yellow */
+}
+
+.strength-3 {
+    background-color: #84cc16; /* light green */
+}
+
+.strength-4 {
+    background-color: #22c55e; /* green */
+}
+
+/* Feedback items */
+.feedback-item {
+    padding: 0.75rem;
+    border-radius: 0.5rem;
+    background-color: #f3f4f6;
+    border-left: 4px solid #6366f1;
+}
+
+.feedback-item.warning {
+    background-color: #fef3c7;
+    border-left-color: #f59e0b;
+}
+
+.feedback-item.suggestion {
+    background-color: #dbeafe;
+    border-left-color: #3b82f6;
+}
+
+/* Breach status styles */
+.breach-safe {
+    background-color: #d1fae5;
+    color: #065f46;
+}
+
+.breach-compromised {
+    background-color: #fee2e2;
+    color: #991b1b;
+}
+
+.breach-checking {
+    background-color: #dbeafe;
+    color: #1e40af;
+}
+
+/* Smooth transitions */
+* {
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
